@@ -1,19 +1,9 @@
-
-trigger:
-- master
-
-- task: Security static source code analysis@88
-  inputs:
-    CheckmarxService: 'Checkmarx'
-    projectName: 'VSTSTest'
-    preset: 'Checkmarx Default'
-    fullTeamName: 'CxServer'
-    incScan: true
-
 # Starter pipeline
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
+trigger:
+- master
 
 pool:
   vmImage: 'ubuntu-latest'
