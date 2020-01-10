@@ -10,6 +10,12 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+- task: Security static source code analysis@88
+  inputs:
+    projectName: 'VSTSTest'
+    preset: 'Checkmarx Default'
+    fullTeamName: 'CxServer'
+    incScan: true
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
