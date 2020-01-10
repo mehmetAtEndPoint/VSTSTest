@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: 'win2016'
+  vmImage: 'ubuntu-latest'
 
 steps:
 - script: echo Hello, world!
@@ -17,9 +17,11 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+  
 - task: Security static source code analysis@88
   inputs:
-    projectName: 'VSTSTest'
+    CheckmarxService: 'Checkmarx'
+    projectName: 'VSTSPlugin'
     preset: 'Checkmarx Default'
     fullTeamName: 'CxServer'
     incScan: true
