@@ -1,6 +1,0 @@
-- task: Security static source code analysis@88
-  inputs:
-    projectName: 'VSTSTest'
-    preset: 'Checkmarx Default'
-    fullTeamName: 'CxServer'
-    incScan: true
