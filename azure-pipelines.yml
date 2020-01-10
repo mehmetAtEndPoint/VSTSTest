@@ -8,10 +8,6 @@ trigger:
 
 pool:
   vmImage: 'win2016'
-- task: Security static source code analysis@88
-  inputs:
-    preset: 'Checkmarx Default'
-    incScan: true
 
 steps:
 - script: echo Hello, world!
