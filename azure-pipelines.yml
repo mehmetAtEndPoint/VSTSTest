@@ -18,10 +18,3 @@ steps:
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
   
-- task: Security static source code analysis@88
-  inputs:
-    CheckmarxService: 'Checkmarx'
-    projectName: 'VSTSPlugin'
-    preset: 'Checkmarx Default'
-    fullTeamName: 'CxServer'
-    incScan: true
