@@ -11,7 +11,7 @@ pool:
 steps:
 - task: Security static source code analysis@88
   inputs:
-    CheckmarxService: 'Checkmarx'
+    CheckmarxService: 'Cx'
     projectName: 'VSTSTest'
     preset: 'Checkmarx Default'
     fullTeamName: 'CxServer'
