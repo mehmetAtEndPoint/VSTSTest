@@ -6,7 +6,7 @@ trigger:
 - master
 
 pool:
- vmImage: 'ubuntu-latest'
+ vmImage: 'windows-latest'
 
 steps:
 - task: Security static source code analysis@2019
